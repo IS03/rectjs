@@ -27,10 +27,12 @@ html , body {
 }
 
 .footer {
-  text-align: center;
-  margin-top: 900px;
   font-size: 50px;
-  background-color: rgb(70, 70, 70);
   color: white;
   padding: 20px;
+}
+
+.titulo_footer {
+  color: white;
+  font-size: 30px;
 }
