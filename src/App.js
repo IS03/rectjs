@@ -1,5 +1,6 @@
 import Header from "./Header"
 import Footer from "./Footer"
+import ItemListContainer from "./ItemListContainer"
 
 const App = () => {
     return (
@@ -11,6 +12,7 @@ const App = () => {
                 links={["Link1", "Link2"]}
                 callback={()=>{console.log("Soy un callback de App")}}
             />
+            <ItemListContainer />
             <Footer />
         </>
     )

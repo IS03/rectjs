@@ -1,4 +1,5 @@
 import Nav from "./Nav"
+import CartWidget from "./CartWidget"
 
 const Header = ({ nombre, apellido, edad, links, callback }) => {
 
@@ -6,14 +7,14 @@ const Header = ({ nombre, apellido, edad, links, callback }) => {
     console.log(edad)
     console.log(links)
 
+    
     return (
         <header id="main-header" className="clase1 clase2" >
             <h1>E-Commerce</h1>
             <p>Bienvenido  {nombre} {apellido} </p>
-            <span className="material-icons">
-                Shopping-Cart
-            </span>
+            <CartWidget/>            
             <Nav />
+
         </header>
     )
 }

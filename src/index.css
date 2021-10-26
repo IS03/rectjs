@@ -36,3 +36,8 @@ html , body {
   color: white;
   font-size: 30px;
 }
+
+.cartWidget {
+  width: 60px;
+  height: 60px;
+}
