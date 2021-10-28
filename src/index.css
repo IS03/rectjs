@@ -48,5 +48,27 @@ html , body {
 }
 
 .botonContador {
-  width: 300px;
+  width: 200px;
+  height: 25px;
+  background-color: aqua;
+  margin-top: 10px;
+}
+
+.botonContador0 {
+  width: 100px;
+  height: 25px;
+  background-color: rgb(6, 153, 153);
+  margin-top: 10px;
+}
+
+.props-div {
+  color: antiquewhite;
+  font-size: 20px;
+  text-align: end;
+  padding-right: 100px;
+  padding-top: 15px;
+}
+
+.nomostar {
+  display: none;
 }

@@ -1,16 +1,11 @@
-import { useState } from "react"
 import Header from "./Header"
 import Footer from "./Footer"
 import ItemListContainer from "./ItemListContainer"
+import Nav from "./Nav"
+import Contador from "./ItemCount"
 import Main from "./Main"
 
 const App = () => {
-    const [saludo,setSaludo] = useState("Hola")
-    const [contador,setContador] = useState(0)
-
-    const sumarContador = () => {
-        setContador(contador + 1)
-    }
 
     return (
         <>
@@ -20,13 +15,21 @@ const App = () => {
                 edad={17}
                 links={["Link1", "Link2"]}
                 callback={()=>{console.log("Soy un callback de App")}}
+                
             />
-            <ItemListContainer />
             
+            <Nav/>
+
+            <ItemListContainer 
+                usuario="1"
+                id="13.10.299"
+            />
+            
+            <Contador />
+
             <Footer />
 
-            <button onClick={sumarContador} className="botonContador">aumentar</button>  
-            <p className="contador">El contador va : {contador}</p>
+
         </>
     )
 }
