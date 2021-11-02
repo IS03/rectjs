@@ -52,14 +52,10 @@ html , body {
   height: 25px;
   background-color: aqua;
   margin-top: 10px;
+  padding-bottom: 25px;
+  text-align: center;
 }
 
-.botonContador0 {
-  width: 100px;
-  height: 25px;
-  background-color: rgb(6, 153, 153);
-  margin-top: 10px;
-}
 
 .props-div {
   color: antiquewhite;
