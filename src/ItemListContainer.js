@@ -1,12 +1,12 @@
 import { useEffect } from "react"
 import Productos from "./Products.json"
 import ItemList from "./ItemList"
-import { useState } from "react/cjs/react.development"
+import { useState } from "react"
 
 const ItemListContainer = (props) => {
 
     const [data, setData] = useState ({})
-    const [loading, setLoading] = useState [true]
+    const [loading, setLoading] = useState (true)
 
     useEffect(() => {
         setTimeout(() => {
@@ -20,7 +20,7 @@ const ItemListContainer = (props) => {
             {
                 loading?
                 <div>
-                    <p>Cargando</p>
+                    <p className="loading">Cargando...</p>
                 </div>:
                 <ItemList data={data}></ItemList>
             }

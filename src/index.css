@@ -78,6 +78,7 @@ html , body {
   height: 25px;
   background-color: rgb(255, 255, 255);
   padding-bottom: 25px;
+  margin-top: 30px;
 }
 
 .props-div {
@@ -98,4 +99,24 @@ html , body {
 
 .nomostar {
   display: none;
+}
+
+.loading {
+  color: white;
+  font-size: 40px;
+  padding: 40px;
+}
+
+.divItem {
+  color: white;
+  text-align: center;
+  border: double;
+  border-color: rgb(139, 139, 139);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.h1Item {
+  padding-bottom: 5px;
 }

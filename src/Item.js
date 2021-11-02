@@ -1,17 +1,19 @@
 function Item({nombre, cantidad, precio }) {
     
     return (
-        <div>  
-            <h1>
+        <div className="divItem">  
+            <h1 className="h1Item">
                 {nombre}
             </h1>
-            <p>
+            <p className="precioItem">
                 ${precio}
             </p>
-            <p>
+            <p className="verDetalles">
+                Ver detalles del Producto
+            </p>
+            <p className="stockItem">
                 Stock: {cantidad}
             </p>
-
         </div>
 
     )

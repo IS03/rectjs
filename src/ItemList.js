@@ -1,5 +1,5 @@
 import {useState, useEffect } from "react"
-import Item from "./ItemList"
+import Item from "./Item"
 
 function ItemList ({ data }) {
     const {Productos} = data 
