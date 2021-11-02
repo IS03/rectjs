@@ -15,7 +15,6 @@ const App = () => {
                 edad={17}
                 links={["Link1", "Link2"]}
                 callback={()=>{console.log("Soy un callback de App")}}
-                
             />
             
             <Nav/>
@@ -28,8 +27,6 @@ const App = () => {
             <Contador />
 
             <Footer />
-
-
         </>
     )
 }

@@ -6,10 +6,11 @@ const ItemListContainer = (props) => {
 
     return (
         <div>
-            <p className="props-div">Sos el usuario número:  {usuario}, con id de: {id} </p>
+            <p className="props-div prop1">Sos el usuario número:  {usuario}° </p>
+            <p className="props-div prop2">Con ID N°: {id} </p>
+            
         </div>
     )
-    
 }
 
 

@@ -6,10 +6,9 @@ const Header = ({ nombre, apellido, edad, links, callback }) => {
 
     
     return (
-        <header id="main-header" className="clase1 clase2" >
+        <header className="clase1 clase2 main-header" >
             <h1>E-Commerce</h1>
             <p>Bienvenido  {nombre} {apellido} </p>
-
         </header>
     )
 }

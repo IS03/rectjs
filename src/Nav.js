@@ -2,11 +2,12 @@ import CartWidget from "./CartWidget"
 
 const Nav = () => {
     return (
-        <nav>
+        <nav className="nav">
+        
+            <a href="#" className="nav-items">Home</a>
+            <a href="#" className="nav-items">Seccion 1</a>
+            <a href="#" className="nav-items">Seccion 2</a>
             <CartWidget/>
-            <a href="#" className="link_header">Link1</a>
-            <a href="#" className="link_header">Link3</a>
-            <a href="#" className="link_header">Link3</a>
             
         </nav>
         

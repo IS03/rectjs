@@ -21,8 +21,8 @@ function Contador () {
 
     return (
         <>
-            <button onClick={restarContador} className="botonContador">restar</button> 
-            <button onClick={sumarContador} className="botonContador">aumentar</button>
+            <button onClick={restarContador} className="botonContador">Restar</button> 
+            <button onClick={sumarContador} className="botonContador">Aumentar</button>
             <button onClick={ceroContador} className="botonContador">Poner en 0</button>   
             <p className="contador">El contador va : {contador}</p>
         </>
