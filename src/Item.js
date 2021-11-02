@@ -1,20 +1,20 @@
-function Item ({ id, title, price, pictureUrl }) {
-
-    console.log("el producto: " + title + ", con id: " + id + ", tiene un precio de: " + price + "." )
+function Item({nombre, cantidad, precio }) {
     
     return (
-        <div>
+        <div>  
             <h1>
-                {title}
+                {nombre}
             </h1>
             <p>
-                {pictureUrl}
-            </p>          
-            <p>
-                ${price}
+                ${precio}
             </p>
+            <p>
+                Stock: {cantidad}
+            </p>
+
         </div>
+
     )
 }
 
-export default Item 
+export default Item

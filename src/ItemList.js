@@ -1,11 +1,23 @@
-import {useState,useEffect} from 'react'
-import Item from './Item'
-import react, {component, useState} from "react"
-import { render } from 'react-dom'
+import {useState, useEffect } from "react"
+import Item from "./ItemList"
 
-function ItemList({ items }) {
-  
+function ItemList ({ data }) {
+    const {Productos} = data 
+
+    return(
+        <>
+        {
+            Productos.map((Producto) => (
+                <Item
+                nombre={Producto.nombre}
+                cantidad={Producto.cantidad}
+                precio={Producto.precio}
+                >
+                </Item>
+            ))
+        }
+        </>
+    )
 }
 
 export default ItemList
-   

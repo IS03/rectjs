@@ -1,0 +1,22 @@
+{
+    "Productos": [
+        {
+            "nombre": "Auriculares Redragon",
+            "cantidad": 4,
+            "precio": 4500,
+            "img": "./img/aurisRedragon.png"
+        },
+        {
+            "nombre": "Auriculares Logitech",
+            "cantidad": 19,
+            "precio": 8900,
+            "img": "./img/aurisLogi.png"
+        },
+        {
+            "nombre": "Auriculares Razer",
+            "cantidad": 9,
+            "precio": 12900,
+            "img": "./img/aurisRazer.png"
+        }
+    ]
+}

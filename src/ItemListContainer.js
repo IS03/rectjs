@@ -1,14 +1,29 @@
-const ItemListContainer = (props) => {
-    const usuario = props.usuario
-    const id = props.id
+import { useEffect } from "react"
+import Productos from "./Products.json"
+import ItemList from "./ItemList"
+import { useState } from "react/cjs/react.development"
 
-    console.log("Entro al sitio el usuario numero:" + usuario + " , id: " + id)
+const ItemListContainer = (props) => {
+
+    const [data, setData] = useState ({})
+    const [loading, setLoading] = useState [true]
+
+    useEffect(() => {
+        setTimeout(() => {
+            setData (Productos)
+            setLoading(false)
+        },2000)
+    })
 
     return (
         <div>
-            <p className="props-div prop1">Sos el usuario número:  {usuario}° </p>
-            <p className="props-div prop2">Con ID N°: {id} </p>
-            
+            {
+                loading?
+                <div>
+                    <p>Cargando</p>
+                </div>:
+                <ItemList data={data}></ItemList>
+            }
         </div>
     )
 }
