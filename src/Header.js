@@ -7,7 +7,7 @@ const Header = ({ nombre, apellido, edad, links, callback }) => {
     
     return (
         <header className="clase1 clase2 main-header" >
-            <h1>E-Commerce</h1>
+            <h1 className="h1Nav">NewTech</h1>
             <p>Bienvenido  {nombre} {apellido} </p>
         </header>
     )

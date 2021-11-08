@@ -4,9 +4,8 @@ const Nav = () => {
     return (
         <nav className="nav">
         
-            <a href="#" className="nav-items">Home</a>
-            <a href="#" className="nav-items">Seccion 1</a>
-            <a href="#" className="nav-items">Seccion 2</a>
+            <a href="index.html" className="nav-items">Home</a>
+            <a href="#pr" className="nav-items">Productos</a>
             <CartWidget/>
             
         </nav>

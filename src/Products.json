@@ -1,22 +1,58 @@
 {
     "Productos": [
         {
-            "nombre": "Auriculares Redragon",
+            "id":"1",
+            "category":"Auriculares",
+            "nombre": "Auriculares Redragon Zeus",
             "cantidad": 4,
             "precio": 4500,
-            "img": "./img/aurisRedragon.png"
+            "img": "/aurisRedragon.png",
+            "descripcion": "Drivers de 53mm que los convierten en los más grandes de su segmento e imanes de neodimio el ZEUS brinda una experiencia de audio insuperable. Mediante su cable de conexión vía USB podemos conseguir un sonido envolvente 7.1 virtual y sacar todo el provecho a nuestras partidas o conectar por medio de su cable Jack 3.5 y disfrutar del sonido estéreo de alta calidad. Posee Un micrófono direccional desmontable con cancelación de ruidos y filtro pop incluido, nos dará la mejor transmisión en nuestros streaming y nuestras partidas, o quitarlo para disfrutar de la música que nos gusta. Su estructura es de plástico ABS calidad industrial, copas metálicas prácticamente indestructibles, vincha ajustable y recubrimiento circumaural, con almohadillas de cuero sintético premium y relleno Memory Foam convierten al ZEUS en un auricular cómodo y duradero, ideal para partidas o transmisiones extensas."
         },
         {
-            "nombre": "Auriculares Logitech",
+            "id":"2",
+            "category":"Auriculares",
+            "nombre": "Auriculares Logitech G365",
             "cantidad": 19,
             "precio": 8900,
-            "img": "./img/aurisLogi.png"
+            "img": "/aurisLogi.png",
+            "descripcion": "Logitech G635 son auriculares con micrófono para gaming optimizados con la más avanzada tecnología de audio de Logitech. Oye más detalles con los grandes transductores Pro-G de 50 mm, hechos de malla híbrida tejida diseñada para reducir la distorsión. La iluminación RGB LIGHTSYNC es totalmente personalizable y reacciona a la acción del juego en juegos compatibles. Para una inmersión máxima, el sonido envolvente DTS Headphone:X 2.0 crea una precisa conciencia posicional en el juego. Oye a los enemigos que te acechan por detrás, siente los ataques aéreos o recibe pistas de habilidades especiales, y disfruta de la experiencia cinemática total de tus juegos favoritos. Las características adicionales para gaming incluyen un gran micrófono de 6 mm volteable para silenciar y teclas G Programables en los auriculares."
         },
         {
-            "nombre": "Auriculares Razer",
+            "id":"3",
+            "category":"Auriculares",
+            "nombre": "Auriculares Razer Kraken 7.1",
             "cantidad": 9,
             "precio": 12900,
-            "img": "./img/aurisRazer.png"
+            "img": "/aurisRazer.png",
+            "descripcion": "Los Razer Kraken 7.1 muestran todo su potencial gracias al avanzado motor de sonido envolvente virtual 7.1. Desarrollado utilizando el potente software de configuración unificada Synapse 2.0 de Razer, este motor altamente personalizable modula el sonido simulando un sonido envolvente de 360⁰, para que puedas localizar de forma precisa el audio direccional y saber exactamente dónde se encuentran tus enemigos. Los diafragmas de los auriculares, con imanes de neodimio de 40 mm, producen una señal acústica con graves profundos, medios cálidos y agudos nítidos, para lograr una inmersión total en el juego. Los Razer Kraken 7.1, gracias a su micrófono retráctil que se oculta en el auricular izquierdo cuando no se usa, poseen un diseño elegante a la vez que protegen el micrófono durante el transporte y el almacenamiento. El micrófono digital, omnidireccional y flexible, está provisto de un algoritmo optimizado que proporciona una calidad de voz sorprendente inalcanzable con los micrófonos analógicos tradicionales. Gracias a su espectacular relación señal-ruido y a su amplia respuesta de frecuencias de banda ancha, este micrófono digital garantiza una reproducción de la voz nítida y natural con un mínimo de ruido. Regala a tus oídos un sonido de juego del máximo nivel con los auriculares para juegos con sonido envolvente Razer Kraken 7.1."
+        },
+        {
+            "id":"4",
+            "category":"Mouses",
+            "nombre": "Mouse Logitech G502 Hero",
+            "cantidad": 4,
+            "precio": 11200,
+            "img": "/mouseLogi.png",
+            "descripcion": "G502 HERO dispone de un sensor óptico avanzado para máxima precisión de seguimiento, iluminación RGB personalizada, perfiles de juego personalizados, de 200 a 25.600 dpi y pesas reposicionables. HERO 25K es nuestro sensor para juegos con una precisión de próxima generación y una arquitectura específica. Con el procesamiento de frecuencia de cuadro más rápido hasta la fecha, HERO es capaz de más de 400 ips y 100 - 25.600 dpi, sin suavizado, filtrado ni aceleración. HERO 25K ofrece precisión al más alto nivel competitivo y máxima uniformidad de respuesta. Asegúrate de personalizar y ajustar tu configuración de dpi con Logitech G HUB. Usa Logitech G HUB para programar 11 botones con tus macros y comandos favoritos. Construye, agáchate, lucha cuerpo a cuerpo, sana... pon tus poderes al alcance de tus dedos. Guarda perfiles listos para jugar directamente en el mouse para llevarte tu configuración a cualquier parte. Ajusta el tacto y el deslizamiento del mouse a tu favor. G502 HERO incluye cinco pesas de 3,6 g que se pueden usar en diversas configuraciones de peso frontal, posterior, izquierdo, derecho y central. Experimenta con la alineación y el equilibrio para encontrar el punto ideal para optimizar el desempeño de tu juego.La tecnología LIGHTSYNC es el RGB de próxima generación determinado por los juegos, el audio o tu pantalla para ofrecer una experiencia RGB más inmersiva que nunca. Elige de un espectro completo de aproximadamente 16,8 millones de colores, y sincroniza efectos y animaciones de iluminación con otros dispositivos Logitech G. Personalízalo todo de forma rápida y sencilla con Logitech G HUB. Además de las características principales de desempeño y personalización, muchos detalles se diseñaron y crearon meticulosamente. Busca botones principales con interruptores mecánicos, laterales de goma, tapa de hueco para pesas magnética y mucho más."
+        },
+        {
+            "id":"5",
+            "category":"Mouses",
+            "nombre": "Mouse Razer Elite",
+            "cantidad": 5,
+            "precio": 6900,
+            "img": "/mouseRazer.png",
+            "descripcion": "Equipado con el nuevo sensor óptico para Esports que ofrece 16.000 ppp reales y una capacidad de rastreo de 450 pulgadas por segundo (IPS), el Razer DeathAdder Elite te da la ventaja definitiva al disponer del sensor más rápido del mercado. Diseñado para redefinir los estándares de velocidad y precisión, este increíble sensor de ratón deja muy atrás a la competencia con una exactitud de resolución del 99,4%. De esta manera, podrás disparar y acabar con los enemigos con una puntería fantástica. Diseñados para darte una ventaja definitiva en las acciones de juego más intensas, el ratón Razer DeathAdder Elite incorpora los nuevos switches mecánicos Razer™. Diseñado y producido de forma conjunta con Omron, el fabricante líder de switches para ratones, estos nuevos switches están ajustados y optimizados para proporcionar tiempos de respuesta más rápidos y una durabilidad extendida de hasta 50 millones de clics.  Razer DeathAdder Elite tiene un excepcional ergonomía que los principales atletas de Esports han comprobado de primera mano. Mantendrás una comodidad increíble incluso durante las batallas más largas e intensas. Junto con los dos agarres laterales de goma, tendrás completo control de tus acciones de juego en todo momento."
+        },
+        {
+            "id":"6",
+            "category":"Mouses",
+            "nombre": "Mouse Redragon Cobra FPS",
+            "cantidad": 7,
+            "precio": 4500,
+            "img": "/mouseRedragon.png",
+            "descripcion": "Un mouse cómodo y bien pensado para cualquier necesidad, desde oficina hasta juegos FPS, MOBA y MMORPG, desde su estructura externa hasta sus componentes internos. El Cobra va desde los 100 hasta los 24.000 DPI, configurables mediante software independiente. Posee adicionalmente dos botones completamente configurables a los DPI que precisemos para cada ocasión. La retroiluminación del Cobra realmente merece un punto aparte, desde sus miles de colores hasta los efectos de transición disponibles y configurables desde el software independiente hacen ilimitadas las configuraciones posibles relacionadas con la iluminación de nuestro dispositivo, ubicadas en el logo, laterales del scroll y una banda que va de lado a lado por los costados del dispositivo. Estructura de ABS reforzado, con cable mallado de 1.8 metros y ficha USB bañada en oro para mejor conductividad y lograr un conector inoxidable. Sus laterales poseen una textura honeycomb, que lo hacen cómodo y firme al agarre. Su interior va tan bien acompañado como su exterior, con su sensor Pixart P3360 Óptico y sus switches ópticos LK, que soportan más de 75 millones de clicks, hacen del Cobra-FPS un mouse durable y de calidad."
         }
     ]
 }

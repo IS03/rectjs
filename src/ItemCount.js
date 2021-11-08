@@ -1,8 +1,11 @@
 import { useState } from "react"
+import Productos from "./Products.json"
+
+const Stock = Productos => Productos.cantidad
 
 function Contador () {
     const [contador,setContador] = useState(0)
-
+    
     const sumarContador = () => {
         setContador(contador + 1)
     }
@@ -12,19 +15,19 @@ function Contador () {
     }
 
     const ceroContador = () => {
-        setContador(contador == 0)
+        setContador(contador === 0)
     }
 
-    if (contador>10) {
-        alert("No hay más stock! Solo 10")
+    if (contador > Stock) {
+        alert("No hay más stock!")
     }
 
     return (
         <>
-            <button onClick={restarContador} className="botonContador">Restar</button> 
-            <button onClick={sumarContador} className="botonContador">Aumentar</button>
-            <button onClick={ceroContador} className="botonContador">Poner en 0</button>   
-            <p className="contador">El contador va : {contador}</p>
+            <button onClick={sumarContador} className="botonContador"><img src="/mas1.png"></img></button>
+            <button onClick={restarContador} className="botonContador"><img src="/menos1.png"></img></button> 
+            <button onClick={ceroContador} className="botonContador"><img src="/basura.png"></img></button>   
+            <p className="contador">{contador}</p>
         </>
     ) 
 }

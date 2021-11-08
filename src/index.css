@@ -48,18 +48,20 @@ html , body {
   padding: 20px;
   background-color: rgb(70, 70, 70);
   text-align: center;
-  margin-top: 700px;
+  margin-top: 30px;
   box-shadow: 10px 10px 10px 20px rgba(0,0,0,0.3);
 }
 
 .titulo_footer {
   color: white;
   font-size: 30px;
+  font-family: 'Mohave', sans-serif;
 }
 
 .texto_footer {
   color: white;
   font-size: 15px;
+  font-family: 'Mohave', sans-serif;
 }
 
 .cartWidget {
@@ -74,9 +76,10 @@ html , body {
 }
 
 .botonContador {
-  width: 200px;
+  width: 150px;
   height: 25px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(139, 0, 0);
+  border-color: black;
   padding-bottom: 25px;
   margin-top: 30px;
 }
@@ -119,4 +122,18 @@ html , body {
 
 .h1Item {
   padding-bottom: 5px;
+}
+
+.imgProductos {
+  width: 300px;
+  height: auto;
+}
+
+.h1Nav {
+  font-family: 'Mohave', sans-serif;
+}
+
+.carrito {
+  width: 25px;
+  height: 25px;
 }

@@ -2,13 +2,14 @@ import Header from "./Header"
 import Footer from "./Footer"
 import ItemListContainer from "./ItemListContainer"
 import Nav from "./Nav"
-import Contador from "./ItemCount"
-import Main from "./Main"
+import { BrowserRouter, Route, Switch } from 'react-dom';
+import ItemDetailContainer from "./ItemDetailContainer"
+
 
 const App = () => {
 
     return (
-        <>
+        <BrowserRouter>
             <Header
                 nombre="Ignacio"
                 apellido="Senestrari"
@@ -16,18 +17,18 @@ const App = () => {
                 links={["Link1", "Link2"]}
                 callback={()=>{console.log("Soy un callback de App")}}
             />
-            
             <Nav/>
 
-            <ItemListContainer 
-                usuario="1"
-                id="13.10.299"
-            />
-            
-            <Contador />
+            <Switch>
+                <Route exact path="/" component={ItemListContainer} />
+                <Route path="/itemDetail/:id" component={ItemDetailContainer} />
+                <Route path="/category/:categoryId" component={ItemListContainer} />
+            </Switch>
+
+            <ItemListContainer/>
 
             <Footer />
-        </>
+        </BrowserRouter>
     )
 }
  

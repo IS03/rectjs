@@ -2,32 +2,39 @@ import { useEffect } from "react"
 import Productos from "./Products.json"
 import ItemList from "./ItemList"
 import { useState } from "react"
+import {useParams} from "react-dom"
+import Item from "./Item"
 
-const ItemListContainer = (props) => {
+const ItemListContainer = (param) => {
 
-    const [data, setData] = useState ({})
+    const [items, setItems] = useState ([])
     const [loading, setLoading] = useState (true)
+    const { categoryId } = useParams()
+    
 
     useEffect(() => {
         setTimeout(() => {
-            setData (Productos)
-            setLoading(false)
-        },2000)
-    })
-
-    return (
-        <div>
-            {
-                loading?
-                <div>
-                    <p className="loading">Cargando...</p>
-                </div>:
-                <ItemList data={data}></ItemList>
+            if (categoryId) {
+                const ProductosFilter = Productos.filter (Producto => Producto.category === categoryId)
+                setItems (ProductosFilter)
+            } else {
+                setItems(Productos);
             }
-        </div>
-    )
-}
+        },2000);
+    }, [categoryId]);
 
+    
+
+    if (items.length === 0 ) {
+        return <p className="loading">Cargando Productos...</p>;
+    } else {
+        return (
+            <>
+                <ItemList param={items}/>
+            </>
+        )
+    }
+}
 
 
 export default ItemListContainer

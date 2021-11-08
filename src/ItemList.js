@@ -1,21 +1,23 @@
-import {useState, useEffect } from "react"
+import Productos from "./Products.json"
 import Item from "./Item"
 
-function ItemList ({ data }) {
-    const {Productos} = data 
 
+function ItemList ({ param }) {
     return(
         <>
-        {
-            Productos.map((Producto) => (
-                <Item
-                nombre={Producto.nombre}
-                cantidad={Producto.cantidad}
-                precio={Producto.precio}
-                >
-                </Item>
-            ))
-        }
+        {   param && param.length > 0 ?
+            param.map (item => {
+                return <div key={item.id}>
+                            <Item
+                            img={Productos.img}
+                            nombre={Productos.nombre}
+                            cantidad={Productos.cantidad}
+                            precio={Productos.precio}
+                            >
+                            </Item>
+                        </div>
+            })
+            : "Eror"}
         </>
     )
 }
