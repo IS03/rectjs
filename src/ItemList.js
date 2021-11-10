@@ -1,4 +1,3 @@
-import Productos from "./Products.json"
 import Item from "./Item"
 
 
@@ -12,7 +11,7 @@ function ItemList ({ param }) {
                             />
                         </div>
             })
-            : "Eror"}
+            : "Error al mostrar lo productos"}
         </>
     )
 }

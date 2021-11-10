@@ -20,14 +20,6 @@ const Item = ({item}) => {
 
             <Contador/>
 
-            <div className="">
-                {Array(item.starts)
-                    .fill()
-                        .map((_, i) => (
-                            <p>.</p> 
-                    ))}
-            </div>
-
             <a>
                 <Link to={`/itemDetail/${item.id}`}>Ver detalles</Link>
             </a>

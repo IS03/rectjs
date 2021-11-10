@@ -13,17 +13,16 @@ const ItemDetailContainer = () => {
         setTimeout (() => {
             setItem (
                 Productos.filter (item => item.id === parseInt(id))
-                
             )
         }, 2000);
     },[]);
 
 
     if (item.length === 0) {
-        return <p>Buscando...</p>;
+        return <p className="search">Buscando...</p>;
     } else {
         return (
-            <ItemDetail item={item}/>
+            <ItemDetail item={item.Productos.id}/>
             
         )
     }

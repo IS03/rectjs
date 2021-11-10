@@ -28,7 +28,7 @@ const ItemListContainer = (param) => {
     } else {
         return (
             <>
-                <ItemList param={items}/>
+                <ItemList param={items.Productos}/>
             </>
         )
     }
