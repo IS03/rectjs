@@ -1,18 +1,19 @@
 import Productos from "./Products.json"
 import ItemDetail from "./ItemDetail"
 import React, {useEffect, useState} from "react"
-import {useParams} from 'react-dom';
+import {useParams} from "react-router-dom";
+
 
 
 const ItemDetailContainer = () => {
     const {id} = useParams ();
-
     const [item, setItem] = useState ([]);
 
     useEffect (() => {
         setTimeout (() => {
             setItem (
                 Productos.filter (item => item.id === parseInt(id))
+                
             )
         }, 2000);
     },[]);
@@ -23,6 +24,7 @@ const ItemDetailContainer = () => {
     } else {
         return (
             <ItemDetail item={item}/>
+            
         )
     }
 }

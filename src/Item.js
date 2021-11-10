@@ -1,5 +1,5 @@
 import Contador from "./ItemCount"
-import {Link} from "react-dom"
+import {Link} from "react-router-dom"
 
 const Item = ({item}) => {
     return (

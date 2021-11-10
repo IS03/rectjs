@@ -2,7 +2,7 @@ import Header from "./Header"
 import Footer from "./Footer"
 import ItemListContainer from "./ItemListContainer"
 import Nav from "./Nav"
-import { BrowserRouter, Route, Switch } from 'react-dom';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ItemDetailContainer from "./ItemDetailContainer"
 
 

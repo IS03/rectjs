@@ -8,13 +8,8 @@ function ItemList ({ param }) {
         {   param && param.length > 0 ?
             param.map (item => {
                 return <div key={item.id}>
-                            <Item
-                            img={Productos.img}
-                            nombre={Productos.nombre}
-                            cantidad={Productos.cantidad}
-                            precio={Productos.precio}
-                            >
-                            </Item>
+                            <Item item={item}
+                            />
                         </div>
             })
             : "Eror"}

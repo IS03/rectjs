@@ -2,13 +2,11 @@ import { useEffect } from "react"
 import Productos from "./Products.json"
 import ItemList from "./ItemList"
 import { useState } from "react"
-import {useParams} from "react-dom"
-import Item from "./Item"
+import {useParams} from "react-router-dom"
 
 const ItemListContainer = (param) => {
 
     const [items, setItems] = useState ([])
-    const [loading, setLoading] = useState (true)
     const { categoryId } = useParams()
     
 
