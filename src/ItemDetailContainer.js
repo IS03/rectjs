@@ -12,7 +12,7 @@ const ItemDetailContainer = () => {
     useEffect (() => {
         setTimeout (() => {
             setItem (
-                Productos.filter (item => item.id === parseInt(id))
+                Productos.Productos.filter (item => item.id === parseInt(id))
             )
         }, 2000);
     },[]);

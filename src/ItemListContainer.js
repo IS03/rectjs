@@ -13,13 +13,14 @@ const ItemListContainer = (param) => {
     useEffect(() => {
         setTimeout(() => {
             if (categoryId) {
-                const ProductosFilter = Productos.filter (Producto => Producto.category === categoryId)
-                setItems (ProductosFilter)
+                const productosFilter = Productos.Productos.filter (Productos => Productos.category === categoryId)
+                console.log (productosFilter)
+                setItems (productosFilter)
             } else {
                 setItems(Productos);
             }
         },2000);
-    }, [categoryId]);
+    }, [categoryId]);  
 
     
 

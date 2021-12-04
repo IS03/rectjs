@@ -20,9 +20,17 @@ const Item = ({item}) => {
 
             <Contador/>
 
+            <div>
+                <button className="botonContadorCompras">
+                    Añadir al Canasto
+                </button>
+            </div>
+        
+
             <a>
                 <Link to={`/itemDetail/${item.id}`}>Ver detalles</Link>
             </a>
+
         </div>
     )
 }

@@ -11,7 +11,7 @@ function ItemList ({ param }) {
                             />
                         </div>
             })
-            : "Error al mostrar lo productos"}
+            : "Error al mostrar los productos"}
         </>
     )
 }
